@@ -1,0 +1,257 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/pedrocapa22/python/blob/main/trabalho%20github\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "4gas6AznAb7k"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ex2\n",
+        "\n",
+        "valor = int(input(\"Informe um número com 5 algarismos: \"))\n",
+        "\n",
+        "a1 = valor // 10000\n",
+        "a2 = (valor % 10000) // 1000\n",
+        "a3 = (valor % 1000) // 100\n",
+        "a4 = (valor % 100) // 10\n",
+        "a5 = valor % 10\n",
+        "\n",
+        "print(a1)\n",
+        "print(a2)\n",
+        "print(a3)\n",
+        "print(a4)\n",
+        "print(a5)"
+      ],
+      "metadata": {
+        "id": "C_bSKwzZEFNg",
+        "outputId": "d8429ad8-2b6b-45c2-8118-06b6bca0e1f0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Informe um número com 5 algarismos: 32\n",
+            "0\n",
+            "0\n",
+            "0\n",
+            "3\n",
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ex4\n",
+        "\n",
+        "pop_atual = float(input(\"Informe a população mundial atual: \"))\n",
+        "taxa_crescimento = float(input(\"Informe a taxa de crescimento (%): \")) / 100\n",
+        "anos = int(input(\"Quantos anos deseja projetar? \"))\n",
+        "\n",
+        "pop_proj = pop_atual * (1 + taxa_crescimento) * anos\n",
+        "\n",
+        "print(f\"A população estimada após {anos} ano(s) será de: {pop_proj}\")\n"
+      ],
+      "metadata": {
+        "id": "_NrM72IME4bn",
+        "outputId": "2be22667-92f4-4366-8f87-d7ac5519feca",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Informe a população mundial atual: 23\n",
+            "Informe a taxa de crescimento (%): 3\n",
+            "Quantos anos deseja projetar? 3\n",
+            "A população estimada após 3 ano(s) será de: 71.07000000000001\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ex6\n",
+        "\n",
+        "massa = float(input(\"Informe seu peso em kg: \"))\n",
+        "alt = float(input(\"Informe sua altura em metros: \"))\n",
+        "imc = massa / alt ** 2\n",
+        "\n",
+        "print(f\"Seu IMC é: {imc}\")\n"
+      ],
+      "metadata": {
+        "id": "AZk-xHZNFGPj",
+        "outputId": "6b090750-4034-4579-b8ee-b0b6d86062b2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Informe seu peso em kg: 23\n",
+            "Informe sua altura em metros: 4\n",
+            "Seu IMC é: 1.4375\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ex5\n",
+        "\n",
+        "for num in range(0, 11):\n",
+        "    print(num, \"-\", num**2, \"-\", num**3)\n"
+      ],
+      "metadata": {
+        "id": "Frqs3A6_FajV",
+        "outputId": "ff083e39-1189-4ed0-f2b7-f17370350376",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0 - 0 - 0\n",
+            "1 - 1 - 1\n",
+            "2 - 4 - 8\n",
+            "3 - 9 - 27\n",
+            "4 - 16 - 64\n",
+            "5 - 25 - 125\n",
+            "6 - 36 - 216\n",
+            "7 - 49 - 343\n",
+            "8 - 64 - 512\n",
+            "9 - 81 - 729\n",
+            "10 - 100 - 1000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ex1\n",
+        "\n",
+        "x = int(input(\"Digite o primeiro valor inteiro: \"))\n",
+        "y = int(input(\"Digite o segundo valor inteiro: \"))\n",
+        "\n",
+        "soma = x + y\n",
+        "print(soma)\n",
+        "\n",
+        "diferenca = x - y\n",
+        "print(diferenca)\n",
+        "\n",
+        "produto = x * y\n",
+        "print(produto)\n",
+        "\n",
+        "divisao = x / y\n",
+        "print(divisao)\n"
+      ],
+      "metadata": {
+        "id": "Jr24VgOgEU_-",
+        "outputId": "112f5298-21b4-4309-8f80-baf9a6bc05a3",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o primeiro valor inteiro: 223\n",
+            "Digite o segundo valor inteiro: 23\n",
+            "246\n",
+            "200\n",
+            "5129\n",
+            "9.695652173913043\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "23#ex3\n",
+        "\n",
+        "r_input = float(input(\"Informe o raio desejado: \"))\n",
+        "PI_VALOR = 3.14\n",
+        "\n",
+        "d_calc = r_input * 2\n",
+        "c_calc = 2 * PI_VALOR * r_input\n",
+        "a_calc = PI_VALOR * (r_input ** 2)\n",
+        "\n",
+        "print(\"Resultado do diâmetro:\", d_calc)\n",
+        "print(\"Resultado da circunferência:\", c_calc)\n",
+        "print(\"Resultado da área:\", a_calc)\n"
+      ],
+      "metadata": {
+        "id": "J8WllHY9EW1I",
+        "outputId": "8b76a29b-a4e3-419e-8b67-3a3e2dfccdd5",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Informe o raio desejado: 23\n",
+            "Resultado do diâmetro: 46.0\n",
+            "Resultado da circunferência: 144.44\n",
+            "Resultado da área: 1661.0600000000002\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Conheça o Colab",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
